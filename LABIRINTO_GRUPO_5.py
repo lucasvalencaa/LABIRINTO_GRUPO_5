@@ -38,11 +38,7 @@ def movimento(posicao: tuple, direcao: list):
     return [posicao[0] + direcao[0], posicao[1] + direcao[1]]
     
 
-def verifica_movimento(posicao: tuple, direcao: list) -> bool:
-    
-    if (LABIRINTO[posicao[0] + direcao[0]][posicao[1] + direcao[1]] == SAIDA):
-        print ('Sucesso')
-        
+def verifica_movimento(posicao: tuple, direcao: list) -> bool:        
     return (LABIRINTO[posicao[0] + direcao[0]][posicao[1] + direcao[1]] == CAMINHO_LIVRE) or (LABIRINTO[posicao[0] + direcao[0]][posicao[1] + direcao[1]] == SAIDA)  
 
 
